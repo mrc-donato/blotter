@@ -1,6 +1,6 @@
 ---
 layout: default
-title: bedford lab / team
+title: TECS Lab / team
 categories:
  - team
 ---
@@ -18,19 +18,58 @@ categories:
 {% for member in site.categories.team reversed %}
 	{% if member.alumni != true %}
     {% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-lg-4 memberbox">
-			<div class="media">
-  				<a class="float-left" href="{{ member.url }}">
-    				<img width=160 class="mr-3" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head mb-1"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-  				</div>
+
+    {% assign member = page %}
+    <div class="col-lg-12">
+		{% if member.image %}
+		<img class="pull-left pad-right media-object d-none d-sm-block" src="{{ member.image }}"style="height:160px">
+		{% endif %}
+		<div class="titlebox">
+			<div class="title">
+				{{ member.title }}
 			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
-        </div>
+			<div class="smallhead">
+				{{ member.position }}
+			</div>
+            <div class="smallspacer"></div>
+            <div class "col-lg-3">
+		        {% if member.cv %} 
+                    <i class="fa fa-file-text-o fa-fw"></i>
+			        <a class="off" href="{{ member.cv }}">CV</a>
+                {% endif %}
+
+		        {% if member.twitter %}
+                    <i class="fa fa-twitter fa-fw"></i>
+			        <a class="off" href="https://twitter.com/{{ member.twitter }}">Twitter</a>
+                {% endif %}
+
+		        {% if member.github %}
+                    <i class="fa fa-github-alt fa-fw"></i>
+			        <a class="off" href="https://github.com/{{ member.github }}">Github</a>
+                {% endif %}
+            	{% if member.scholar %}
+			        <i class="fa fa-book fa-fw"></i>
+			        <a class="off" href="http://scholar.google.com/citations?user={{ member.scholar }}">Google Scholar</a>
+		        {% endif %}
+                {% if member.website %}
+			        <i class="fa fa-globe fa-fw"></i>
+			        <a class="off" href="{{ member.website }}">Personal Website</a>
+		        {% endif %}
+		        {% if member.email %}
+		        {% assign emailarray = member.email | split: '@' %}
+			        <i class="fa fa-inbox fa-fw"></i>
+	        		{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+		        {% endif %}
+		
+        <div class="bigspacer"></div>
+        <div class="post">
+			{{ member.content }}
+		</div>
+
+        <div class="bigspacer"></div>
+		</div>
+	    </div>
+    </div>
     {% cycle 'close rows': '', '', '</div>' %}
     {% endif %}
 {% endfor %}

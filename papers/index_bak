@@ -1,0 +1,66 @@
+---
+layout: default
+title: bedford lab / papers
+categories:
+ - papers
+---
+
+{% for paper in site.categories.papers %}
+{% capture prev_year %}{{ this_year }}{% endcapture %}
+{% capture this_year %}{{ paper.year }}{% endcapture %}
+
+<div class="row">
+  <div class="row">
+     <div class="col-lg-12">
+         {% if forloop.first %}
+            <h1>{{ this_year }}</h1>
+         {% elsif this_year != prev_year %}
+            {% if this_year > "2015" %}
+            <h1>{{ this_year }}</h1>
+            {% else %}
+            <h1>2016 and earlier</h1>
+            {% endif %}
+
+   </div>
+     {% else %}
+     <div class="col-lg-12"></div>
+     <div></div>
+    {% endif %}
+   </div>
+   <div class="row">
+         <div class="smallhead mb-1"><a href="{{ paper.link }}" class="off">{{ paper.title }}</a>
+         <p class="note">{{ paper.authors }}</p>
+         <p class="note">{{ paper.venue}}</p>
+         
+
+         {% if paper.pdf %}
+         <div class="pad-left note">
+         	<i class="fa fa-file-text-o fa-fw"></i>
+         	<a class="off" href="{{ paper.pdf }}">PDF</a>
+         </div>
+         {% endif %}
+         {% if paper.slides %}
+         <div class="pad-left note">
+         	<i class="fa fa-file-text-o fa-fw"></i>
+         	<a class="off" href="{{ paper.slides }}">Slides</a>
+         </div>
+         {% endif %}
+         {% if paper.video %}
+         <div class="pad-left note">
+         	<i class="fa fa-file-text-o fa-fw"></i>
+         	<a class="off" href="{{ paper.video }}">video</a>
+         </div>
+         {% endif %}
+         {% if paper.github %}
+         <div class="pad-left note">
+         	<i class="fa fa-file-text-o fa-fw"></i>
+         	<a class="off" href="{{ paper.github }}">GitHub</a>
+         </div>
+         {% endif %}
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+    </div>
+{% endfor %}
+</div>
+
