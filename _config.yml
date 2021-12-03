@@ -1,54 +1,13 @@
 name: Tufts Emerging Circuits and Systems Lab
 description: Designing energy-efficient circuits and systems at Tufts University
-url: http://bedford.io
+url: http://eecs.tufts.edu/~mdonato/lab
 
 markdown: kramdown
 permalink: /:categories/:title/
 future: true
 sass:
   sass_dir: css
-
-# Publications content
-# Run this in vim before adding publications :%s/\[\(\d\+\)\]/\=submatch(1)+1/ and :%s/^\s\(\d\+\)\s/[\1]/
-pubs_content: |
- [1] M.M. Sharifi, L. Pentecost, R. Rajaei, A. Kazemi, Q. Lou, G-Y. Wei, D. Brooks, K. Ni, X. Hu, M. Niemier, **M. Donato**, [“Application-driven Design Exploration for Dense Ferroelectric Embedded Non-volatile Memories”](https://ieeexplore.ieee.org/document/9502489) in IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED) 2021
- 
- [2] T. Tambe, E-Y. Yang, G. Ko, Y. Chai, C. Hooper, **M. Donato**, P. Whatmough, A. Rush, D. Brooks, G-Y. Wei, [“A 25mm2 SoC for IoT Devices with 18ms Noise-Robust Speech-to-Text Latency via Bayesian Speech Denoising and Attention-Based Sequence-to-Sequence DNN Speech Recognition in 16nm FinFET”](https://ieeexplore.ieee.org/abstract/document/9366062), in IEEE International Solid-State Circuits Conference (ISSCC), Feb. 2021
-  
- [3] G. Ko, Y. Chai, **M. Donato**, P. Whatmough, T. Tambe, R. Rutenbar, D. Brooks, G.-Y. Wei, [“A 3mm^2 Programmable Bayesian Inference Accelerator for Unsupervised Machine Perception using Parallel Gibbs Sampling in 16nm”](https://ieeexplore.ieee.org/abstract/document/9162784) in IEEE Symposium on VLSI Circuits (VLSIC), Jun. 2020
-   
- [4] E. Rezaei, **M. Donato**, W. Patterson, A. Zaslavsky, and R. I. Bahar, [“Fundamental Thermal Limits on Data Retention in Low-Voltage CMOS Latches and SRAM”](https://ieeexplore.ieee.org/document/9098936) *IEEE Transactions on Device and Materials Reliability* **[\[pdf\]](assets/papers/TDMR2020.pdf)** 
-     
- [5] P. Whatmough. **M. Donato**, G. Ko, D. Brooks, and G.-Y. Wei, [“CHIPKIT: An agile, reusable open-source framework for rapid test chip development”](https://ieeexplore.ieee.org/document/9096507), _IEEE MICRO_ **[\[pdf\]](assets/papers/chipkit.pdf)**
-     
- [6] **M. Donato**, L. Pentecost, D. Brooks, and G.-Y. Wei, [“MEMTI: Optimizing on-chip non-volatile storage for visual multi-task inference at the edge”](https://ieeexplore.ieee.org/document/8859219), _IEEE MICRO_, vol. 39, no. 6, Nov./Dec. 2019 **[\[pdf\]](assets/papers/MEMTI.pdf)** 
-     
- [7] L. Pentecost, **M. Donato**, B. Reagen, U. Gupta, S. Ma, G.-Y. Wei, and D. Brooks, [“MaxNVM: Maximizing DNN storage density and inference efficiency with sparse encoding and error mitigation”](https://dl.acm.org/doi/10.1145/3352460.3358258) in Proceedings of the 52th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO52), Oct. 2019 **[\[pdf\]](assets/papers/MaxNVM.pdf)**
-     
- [8] S. Ma, **M. Donato**, S. K. Lee, D. Brooks, and G.-Y. Wei, [“Fully-CMOS multi-level embedded non-volatile memory devices with reliable long-term retention for efficient storage of neural network weights”](https://ieeexplore.ieee.org/document/8767952), *IEEE Electron Device Letters*, vol.40, no.9, Sep. 2019
-     
- [9] U. Gupta, B. Reagen, L. Pentecost, **M. Donato**, T. Tambe, A. Rush, G.-Y. Wei, D. Brooks, [“MASR: A modular accelerator for sparse RNNs”](https://ieeexplore.ieee.org/document/8891617), in Proceedings of the 27th International Conference on Parallel Architectures and Compilation Techniques (PACT), Oct. 2019
-      
- [10] E. Rezaei, **M. Donato**, W. Patterson, A. Zaslavsky, and R. I. Bahar, “Thermal noise-induced error simulation framework for subthreshold CMOS SRAM” in IEEE SOI-3D-Subthreshold Microelectronics Technology Unified Conference (S3S), Oct. 2019
-      
- [11] P. Whatmough, S. K. Lee, **M. Donato**, H. C. Hsueh, S. Xi, U. Gupta, L. Pentecost, G. Ko, D. Brooks, and G.-Y. Wei, [“A 16nm 25mm^2 SoC with a 54.5x flexibility-efficiency range from dual-core Arm Cortex-A53, to eFPGA, and cache-coherent accelerators”](https://ieeexplore.ieee.org/document/8778002) in IEEE Symposium on VLSI Circuits (VLSIC), Jun. 2019 **[\[pdf\]](assets/papers/smiv.pdf)**
-      
- [12] **M. Donato**, B. Reagen, L. Pentecost, U. Gupta, D. Brooks, and G.-Y. Wei, [“On-chip deep neural network storage with multi-level eNVM”](https://dl.acm.org/doi/abs/10.1145/3195970.3196083) in Proceedings of the 55th Annual Design Automation Conference (DAC), Jun. 2018 **[\[pdf\]](assets/papers/dac2018-envm.pdf)**
-      
- [13] **M. Donato**, R. I. Bahar, W. R. Patterson, and A. Zaslavsky, [“A sub-threshold noise transient simulator based on integrated random telegraph and thermal noise modeling”](https://ieeexplore.ieee.org/document/7954053) *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems*, vol.37, no.3, 2018
-      
- [14] **M. Donato**, R. I. Bahar, W. Patterson, and A. Zaslavsky, [“A fast simulator for the analysis of sub-threshold thermal noise transients”](https://dl.acm.org/doi/abs/10.1145/2897937.2897960) in Proceedings of the 53rd Annual Design Automation Conference (DAC), Jun. 2016
-      
- [15] X. Han, **M. Donato**, R. I. Bahar, W. Patterson, and A. Zaslavsky, [“Design of error-resilient logic gates with reinforcement using implications”](https://dl.acm.org/doi/abs/10.1145/2902961.2902983) in Proceedings of the 26th Edition on the Great Lakes Symposium on VLSI (GLSVLSI), May 2016
-      
- [16] **M. Donato**, R. I. Bahar, W. Patterson, and A. Zaslavsky, [“A simulation framework for analyzing transient effects due to thermal noise in sub-threshold circuits”](https://dl.acm.org/doi/abs/10.1145/2742060.2742066) in Proceedings of the 25th Edition on Great Lakes Symposium on VLSI (GLSVLSI), May 2015
-      
- [17] **M. Donato**, F. Cremona, W. Jin, R. I. Bahar, W. Patterson, A. Zaslavsky, and J. Mundy, [“A noise-immune sub-threshold circuit design based on selective use of Schmitt-trigger logic”](https://dl.acm.org/doi/abs/10.1145/2206781.2206792) in Proceedings of the 22th Edition on Great Lakes Symposium on VLSI (GLSVLSI), May 2012
-      
- [18] P. Jannaty, F. C. Sabou, S. T. Le, **M. Donato**, R. I. Bahar, W. Patterson, J. Mundy, and A. Zaslavsky, [“Shot-noise-induced failure in nanoscale ﬂip-ﬂops Part I: Numerical framework”](https://ieeexplore.ieee.org/document/6122497) *IEEE Transactions on Electron Devices*, vol.59, no.3, 2012
-      
- [19] P. Jannaty, F. C. Sabou, S. T. Le, **M. Donato**, R. I. Bahar, W. Patterson, J. Mundy, and A. Zaslavsky, [“Shot-noise-induced failure in nanoscale ﬂip-ﬂops Part II: Failure rates in 10-nm ultimate CMOS”](https://ieeexplore.ieee.org/document/6138300) *IEEE Transactions on Electron Devices*, vol.59,  no.3, 2012
-
+baseurl: /~mdonato/lab
 
 plugins: ['jekyll-twitter-plugin']
 

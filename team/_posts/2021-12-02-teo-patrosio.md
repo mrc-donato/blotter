@@ -5,7 +5,7 @@ position: Undergraduate student
 handle: tpatrosio
 github: 
 scholar: 
-image: 
+image: /images/team/tecs-jumbo-logo.jpg 
 twitter: 
 alumni: false
 ---
