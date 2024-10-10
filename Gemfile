@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # jekyll
-gem "jekyll", "4.2.0"
+gem "jekyll", "4.3.3"
 
 # katex
 gem "execjs"
@@ -11,6 +11,17 @@ gem 'octokit'
 gem 'netrc'
 
 # Twitter
-gem 'jekyll-twitter-plugin'
+#gem 'jekyll-twitter-plugin'
+
 
 gem "webrick", "~> 1.7"
+
+gem 'logger'
+
+gem 'csv'
+
+gem 'ostruct'
+
+gem 'base64'
+
+gem 'mini_racer'

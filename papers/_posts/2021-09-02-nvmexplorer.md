@@ -5,5 +5,5 @@ authors:  L. Pentecost, A. Hankin, M. Donato, M. Hempstead, G-Y. Wei, D. Brooks
 link: https://arxiv.org/abs/2109.01188
 venue: ArXiv
 year: 2021
-pdf: pdfs/papers/
+pdf: /pdfs/papers/nvmexplorer_arxiv.pdf
 ---

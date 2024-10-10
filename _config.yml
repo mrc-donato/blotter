@@ -1,7 +1,6 @@
-name: Tufts Emerging Circuits and Systems Lab
+name: Tufts Emerging Circuits and Systems (TECS) Lab
 description: Designing energy-efficient circuits and systems at Tufts University
 url: http://eecs.tufts.edu/~mdonato/lab
-
 markdown: kramdown
 permalink: /:categories/:title/
 future: true
@@ -9,7 +8,7 @@ sass:
   sass_dir: css
 baseurl: /~mdonato/lab
 
-plugins: ['jekyll-twitter-plugin']
+  #plugins: ['jekyll-twitter-plugin']
 
 exclude:
   - "*.branches"

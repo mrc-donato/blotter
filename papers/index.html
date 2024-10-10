@@ -35,15 +35,15 @@ categories:
         <b>{{ paper.venue }}</b>
         {% if paper.pdf %}
         	<i class="fa fa-file-text-o fa-fw"></i>
-        	<a class="off" href="{{ paper.pdf }}">PDF</a>
+            <a class="off" href="{{ site.baseurl }}/{{ paper.pdf }}">PDF</a>
         {% endif %}
         {% if paper.slides %}
         	<i class="fa fa-file-text-o fa-fw"></i>
-        	<a class="off" href="{{ paper.slides }}">Slides</a>
+            <a class="off" href="{{ site.baseurl }}/{{ paper.slides }}">Slides</a>
         {% endif %}
         {% if paper.video %}
         	<i class="fa fa-file-text-o fa-fw"></i>
-        	<a class="off" href="{{ paper.video }}">Video</a>
+            <a class="off" href="{{ site.baseurl }}/{{ paper.video }}">Video</a>
         {% endif %}
         {% if paper.github %}
         	<i class="fa fa-github-alt fa-fw"></i>

@@ -14,7 +14,7 @@ build: clean
 	#@cp $(cv_dir)/publist.css _site/_pages/publications/
 	#@cp $(cv_dir)/curriculum_vitae.pdf ./assets/MarcoDonato_CV.pdf 
 publish:
-	cd _site; rsync -rv * $(url)
+	cd _site; scp -r * $(url)
 #biblio: $(cv_dir)/MDonatopubs.bib
 #	cp $(cv_dir)/MDonatopubs.bib _bibliography
 	
